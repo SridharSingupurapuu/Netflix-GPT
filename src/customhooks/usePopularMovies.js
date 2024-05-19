@@ -19,7 +19,7 @@ const usePopularMovies = () => {
   };
 
   useEffect(() => {
-    if (!popularMovies) getPopularMovies();
+    !popularMovies && getPopularMovies();
   }, []);
 };
 

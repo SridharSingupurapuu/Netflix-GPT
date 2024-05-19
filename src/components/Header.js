@@ -58,11 +58,11 @@ const Header = () => {
     <div
       className={
         showGptSearch
-          ? "absolute w-screen px-5 py-20  z-10 flex justify-between -mt-20"
-          : "absolute w-screen px-5 py-20  z-10 flex justify-between"
+          ? "absolute w-screen px-5 py-20  z-10 flex flex-col md:flex-row justify-between -mt-20"
+          : "absolute w-screen px-5 py-20  z-10 flex justify-between -mt-24 md:mt-0"
       }
     >
-      <img src={LOGO} alt="logo" className="w-44" />
+      <img src={LOGO} alt="logo" className="w-44 mx-auto md:mx-0" />
       {user && (
         <div className="flex p-5">
           {showGptSearch && (
